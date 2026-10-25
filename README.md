@@ -6,7 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=21&pause=1100&color=00C7FF&center=true&vCenter=true&width=900&height=60&lines=Senior+Cloud+Infrastructure+Engineer;Microsoft+Azure+%7C+AWS+%7C+Google+Cloud;Terraform+%7C+IaC+%7C+Azure+DevOps;Hybrid+Cloud+%7C+Landing+Zones+%7C+Hub-and-Spoke;Building+resilient%2C+secure+%26+scalable+cloud+platforms" alt="Animated headline" />
 </a>
 
-### ☁️ Senior Cloud Infrastructure Engineer | Microsoft Azure | AWS | Terraform | DevOps
+### ☁️ Senior Cloud Infrastructure Engineer | DevOps | Microsoft Azure | GCP | AWS | Terraform | CI/CD
 
 **Cloud Architecture · Hybrid Infrastructure · Automation · High Availability · Security**
 
