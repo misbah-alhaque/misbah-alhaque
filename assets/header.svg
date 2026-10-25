@@ -1,0 +1,332 @@
+<svg fill="none" viewBox="0 0 950 260" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- DevOps Insiders Dark Theme Canvas Background -->
+    <linearGradient id="doiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C18" />
+      <stop offset="45%" stop-color="#0E1528" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <!-- DevOps Insiders Signature Gradient (Indigo to Cyan to Purple) -->
+    <linearGradient id="doiBrandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4C56D4" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="80%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <!-- Animated Border Gradient -->
+    <linearGradient id="doiBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4C56D4">
+        <animate attributeName="stop-color" values="#4C56D4;#0EA5E9;#7C3AED;#4C56D4" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#0EA5E9">
+        <animate attributeName="stop-color" values="#0EA5E9;#7C3AED;#4C56D4;#0EA5E9" dur="7s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#4C56D4;#0EA5E9;#7C3AED" dur="7s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Title Metallic Shimmer Gradient -->
+    <linearGradient id="doiTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#C7D2FE">
+        <animate attributeName="stop-color" values="#FFFFFF;#93C5FD;#C7D2FE;#FFFFFF" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="70%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Subtitle Gradient (4C56D4 to 0EA5E9 to 10B981) -->
+    <linearGradient id="doiSubtitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Ambient Large Blob Blur -->
+    <filter id="blobBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="55" result="blur" />
+    </filter>
+  </defs>
+
+  <style>
+    .doi-name {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 50px;
+      fill: url(#doiTitleGrad);
+      letter-spacing: -0.5px;
+      filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.7));
+    }
+    .doi-role {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      fill: url(#doiSubtitleGrad);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      filter: drop-shadow(0 2px 10px rgba(76, 86, 212, 0.3));
+    }
+    .doi-pill-text {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      fill: #A5B4FC;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    .doi-metrics-text {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #CBD5E1;
+      letter-spacing: 0.8px;
+    }
+    .plexus-line {
+      stroke: #6366F1;
+      stroke-width: 1.2;
+      opacity: 0.3;
+    }
+    .plexus-line-accent {
+      stroke: #0EA5E9;
+      stroke-width: 1.3;
+      opacity: 0.38;
+    }
+    .pulse-dot {
+      animation: pulseAnim 2.5s infinite ease-in-out;
+    }
+    @keyframes pulseAnim {
+      0%, 100% { opacity: 0.35; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+  </style>
+
+  <!-- Canvas Container with DevOps Insiders Glowing Border -->
+  <rect x="2" y="2" width="946" height="256" rx="18" fill="url(#doiBg)" stroke="url(#doiBorderGrad)" stroke-width="1.8" />
+
+  <!-- Ambient Floating Blobs (DevOps Insiders CSS Theme Blobs) -->
+  <circle cx="160" cy="70" r="140" fill="#4C56D4" opacity="0.18" filter="url(#blobBlur)" />
+  <circle cx="800" cy="170" r="150" fill="#7C3AED" opacity="0.16" filter="url(#blobBlur)" />
+  <circle cx="480" cy="120" r="110" fill="#0EA5E9" opacity="0.09" filter="url(#blobBlur)" />
+
+  <!-- Top Decorative Gradient Accent Bar -->
+  <rect x="18" y="2" width="914" height="3" rx="1.5" fill="url(#doiBrandGrad)" />
+
+  <!-- ================= CONSTELLATION / PLEXUS MESH ================= -->
+
+  <!-- Translucent Animated Network Polygons -->
+  <g>
+    <!-- Left Network Polygon Planes -->
+    <polygon fill="#4C56D4" fill-opacity="0.045">
+      <animate attributeName="points"
+        values="75,65 155,145 235,80; 100,85 180,125 255,60; 75,65 155,145 235,80"
+        dur="9s" repeatCount="indefinite" />
+    </polygon>
+    <polygon fill="#6366F1" fill-opacity="0.035">
+      <animate attributeName="points"
+        values="155,145 115,200 290,175; 180,125 105,210 310,165; 155,145 115,200 290,175"
+        dur="11s" repeatCount="indefinite" />
+    </polygon>
+    <polygon fill="#0EA5E9" fill-opacity="0.03">
+      <animate attributeName="points"
+        values="235,80 290,175 375,110; 255,60 310,165 390,120; 235,80 290,175 375,110"
+        dur="8s" repeatCount="indefinite" />
+    </polygon>
+
+    <!-- Right Network Polygon Planes -->
+    <polygon fill="#7C3AED" fill-opacity="0.045">
+      <animate attributeName="points"
+        values="665,75 585,150 735,180; 690,55 570,160 715,200; 665,75 585,150 735,180"
+        dur="10s" repeatCount="indefinite" />
+    </polygon>
+    <polygon fill="#4C56D4" fill-opacity="0.04">
+      <animate attributeName="points"
+        values="665,75 800,85 875,160; 690,55 820,105 890,150; 665,75 800,85 875,160"
+        dur="9s" repeatCount="indefinite" />
+    </polygon>
+    <polygon fill="#0EA5E9" fill-opacity="0.03">
+      <animate attributeName="points"
+        values="735,180 875,160 850,215; 715,200 890,150 835,225; 735,180 875,160 850,215"
+        dur="12s" repeatCount="indefinite" />
+    </polygon>
+  </g>
+
+  <!-- Plexus Network Connecting Vectors -->
+  <!-- Left Network Lines -->
+  <line class="plexus-line">
+    <animate attributeName="x1" values="75;100;75" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="65;85;65" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="155;180;155" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="145;125;145" dur="9s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line-accent">
+    <animate attributeName="x1" values="75;100;75" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="65;85;65" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="235;255;235" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="80;60;80" dur="9s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="155;180;155" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="145;125;145" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="115;105;115" dur="11s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="200;210;200" dur="11s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="155;180;155" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="145;125;145" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="290;310;290" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="175;165;175" dur="8s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line-accent">
+    <animate attributeName="x1" values="235;255;235" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="80;60;80" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="290;310;290" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="175;165;175" dur="8s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="235;255;235" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="80;60;80" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="375;390;375" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="110;120;110" dur="8s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="290;310;290" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="175;165;175" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="375;390;375" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="110;120;110" dur="8s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Right Network Lines -->
+  <line class="plexus-line">
+    <animate attributeName="x1" values="585;570;585" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="150;160;150" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="665;690;665" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="75;55;75" dur="10s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line-accent">
+    <animate attributeName="x1" values="585;570;585" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="150;160;150" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="735;715;735" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="180;200;180" dur="10s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="665;690;665" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="75;55;75" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="800;820;800" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="85;105;85" dur="9s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="735;715;735" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="180;200;180" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="800;820;800" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="85;105;85" dur="9s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line-accent">
+    <animate attributeName="x1" values="800;820;800" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="85;105;85" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="875;890;875" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="160;150;160" dur="9s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="735;715;735" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="180;200;180" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="850;835;850" dur="12s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="215;225;215" dur="12s" repeatCount="indefinite" />
+  </line>
+  <line class="plexus-line">
+    <animate attributeName="x1" values="875;890;875" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="160;150;160" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="850;835;850" dur="12s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="215;225;215" dur="12s" repeatCount="indefinite" />
+  </line>
+
+  <!-- ================= GLOWING NETWORK VERTICES ================= -->
+  <!-- Left Vertices -->
+  <circle r="4" fill="#0EA5E9" filter="url(#nodeGlow)">
+    <animate attributeName="cx" values="75;100;75" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="65;85;65" dur="9s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4.5" fill="#6366F1" filter="url(#nodeGlow)">
+    <animate attributeName="cx" values="155;180;155" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="145;125;145" dur="9s" repeatCount="indefinite" />
+  </circle>
+  <circle r="3.5" fill="#A5B4FC">
+    <animate attributeName="cx" values="115;105;115" dur="11s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="200;210;200" dur="11s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4.5" fill="#4C56D4" filter="url(#nodeGlow)">
+    <animate attributeName="cx" values="235;255;235" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="80;60;80" dur="9s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4" fill="#7C3AED">
+    <animate attributeName="cx" values="290;310;290" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="175;165;175" dur="8s" repeatCount="indefinite" />
+  </circle>
+  <circle r="3.5" fill="#0EA5E9" filter="url(#nodeGlow)">
+    <animate attributeName="cx" values="375;390;375" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="110;120;110" dur="8s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Right Vertices -->
+  <circle r="3.5" fill="#6366F1">
+    <animate attributeName="cx" values="585;570;585" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="150;160;150" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4.5" fill="#0EA5E9" filter="url(#nodeGlow)">
+    <animate attributeName="cx" values="665;690;665" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="75;55;75" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4" fill="#7C3AED">
+    <animate attributeName="cx" values="735;715;735" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="180;200;180" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4.5" fill="#4C56D4" filter="url(#nodeGlow)">
+    <animate attributeName="cx" values="800;820;800" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="85;105;85" dur="9s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4" fill="#6366F1" filter="url(#nodeGlow)">
+    <animate attributeName="cx" values="875;890;875" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="160;150;160" dur="9s" repeatCount="indefinite" />
+  </circle>
+  <circle r="3.5" fill="#0EA5E9">
+    <animate attributeName="cx" values="850;835;850" dur="12s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="215;225;215" dur="12s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- ================= DEVOPS INSIDERS BRANDED HERO CONTENT ================= -->
+
+  <!-- Top Enterprise Pill (Styled like DevOps Insiders .enterprise-pill) -->
+  <g transform="translate(475, 42)">
+    <rect x="-165" y="-14" width="330" height="28" rx="14" fill="#1E1B4B" stroke="#4C56D4" stroke-width="1.2" opacity="0.95" />
+    <circle cx="-140" cy="0" r="4.5" fill="#0EA5E9" class="pulse-dot" />
+    <text x="-120" y="4" class="doi-pill-text">ENTERPRISE CLOUD ARCHITECTURE &amp; SRE</text>
+  </g>
+
+  <!-- Name Title (Plus Jakarta Sans, crisp executive typography) -->
+  <text x="475" y="112" text-anchor="middle" class="doi-name">Misbahul Haque</text>
+
+  <!-- Role Subtitle (DevOps Insiders Signature Indigo-Cyan Gradient) -->
+  <text x="475" y="154" text-anchor="middle" class="doi-role">Senior Cloud Infrastructure Engineer</text>
+
+  <!-- Experience & Specialization Metrics -->
+  <g transform="translate(475, 202)">
+    <text x="0" y="0" text-anchor="middle" class="doi-metrics-text">
+      12+ Years Enterprise IT &nbsp;•&nbsp; 9+ Years Multi-Cloud (Azure • AWS • GCP) &nbsp;•&nbsp; Terraform &amp; GitOps
+    </text>
+  </g>
+
+  <!-- Bottom Subtle Gradient Accent Line -->
+  <line x1="220" y1="234" x2="730" y2="234" stroke="url(#doiBrandGrad)" stroke-width="1.8" stroke-linecap="round" opacity="0.85" />
+</svg>
