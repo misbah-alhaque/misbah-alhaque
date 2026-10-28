@@ -19,7 +19,7 @@
 
 ## 👋 About Me
 
-I am a **Senior DevSecOps Engineer & Cloud Solutions Architectrs**with expertise in designing, implementing, and optimizing enterprise cloud platforms across **Microsoft Azure**, **AWS**, and **Google Cloud Platform (GCP)**.
+I am a **Senior DevSecOps Engineer & Cloud Solutions Architectrs** with expertise in designing, implementing, and optimizing enterprise cloud platforms across **Microsoft Azure**, **AWS**, and **Google Cloud Platform (GCP)**.
 
 My core focus is architecting **hybrid cloud environments**, **landing zones**, **hub-and-spoke networking**, **Infrastructure as Code (Terraform)**, and **disaster recovery (DR)** to ensure seamless business continuity, high availability, and operational resilience.
 
