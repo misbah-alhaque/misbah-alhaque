@@ -1,0 +1,193 @@
+<svg fill="none" viewBox="0 0 950 120" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- DevOps Insiders Theme Canvas Background (White to Slate-50 with Subtle Indigo Tint) -->
+    <linearGradient id="doiFooterBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2FF" />
+    </linearGradient>
+
+    <!-- DevOps Insiders Corporate Gradient Bar -->
+    <linearGradient id="doiFooterBrandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#312E81" />
+      <stop offset="45%" stop-color="#4C56D4" />
+      <stop offset="75%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <!-- Animated Border Gradient (Indigo to Cyan to Purple) -->
+    <linearGradient id="doiFooterBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C7D2FE">
+        <animate attributeName="stop-color" values="#C7D2FE;#4C56D4;#818CF8;#C7D2FE" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#6366F1">
+        <animate attributeName="stop-color" values="#6366F1;#0EA5E9;#4C56D4;#6366F1" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#7C3AED;#6366F1;#A78BFA" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Footer Tagline Gradient Text -->
+    <linearGradient id="doiFooterTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="30%" stop-color="#1E1B4B">
+        <animate attributeName="stop-color" values="#1E1B4B;#312E81;#1E1B4B" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="65%" stop-color="#4C56D4">
+        <animate attributeName="stop-color" values="#4C56D4;#6366F1;#4C56D4" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#0EA5E9;#7C3AED" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Card Elevation Drop Shadow -->
+    <filter id="doiFooterCardShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#4C56D4" flood-opacity="0.08" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.04" />
+    </filter>
+
+    <!-- Node Glow Filter -->
+    <filter id="doiFooterNodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Ambient Blob Blur -->
+    <filter id="doiFooterBlobBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="45" result="blur" />
+    </filter>
+  </defs>
+
+  <style>
+    .doi-footer-text {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 19px;
+      fill: url(#doiFooterTitleGrad);
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      filter: drop-shadow(0 2px 8px rgba(76, 86, 212, 0.20));
+    }
+    .doi-footer-line {
+      stroke: #4C56D4;
+      stroke-width: 1.1;
+      opacity: 0.20;
+    }
+    .doi-footer-line-accent {
+      stroke: #0EA5E9;
+      stroke-width: 1.2;
+      opacity: 0.30;
+    }
+  </style>
+
+  <!-- Canvas Container with DevOps Insiders Border and Elevation -->
+  <rect x="2" y="2" width="946" height="116" rx="16" fill="url(#doiFooterBg)" stroke="url(#doiFooterBorderGrad)" stroke-width="1.6" filter="url(#doiFooterCardShadow)" />
+
+  <!-- Ambient Floating Theme Blobs -->
+  <circle cx="120" cy="50" r="110" fill="#4C56D4" opacity="0.14" filter="url(#doiFooterBlobBlur)">
+    <animate attributeName="cx" values="120;150;120" dur="14s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="830" cy="70" r="120" fill="#7C3AED" opacity="0.12" filter="url(#doiFooterBlobBlur)">
+    <animate attributeName="cx" values="830;800;830" dur="16s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="475" cy="60" r="90" fill="#0EA5E9" opacity="0.08" filter="url(#doiFooterBlobBlur)">
+    <animate attributeName="cx" values="475;500;475" dur="12s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- ================= LEFT CONSTELLATION MESH ================= -->
+  <!-- Left Translucent Polygons -->
+  <polygon fill="#4C56D4" fill-opacity="0.04">
+    <animate attributeName="points"
+      values="60,35 130,85 190,40; 80,45 150,75 210,30; 60,35 130,85 190,40"
+      dur="9s" repeatCount="indefinite" />
+  </polygon>
+
+  <!-- Left Connecting Vectors -->
+  <line class="doi-footer-line">
+    <animate attributeName="x1" values="60;80;60" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="35;45;35" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="130;150;130" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="85;75;85" dur="9s" repeatCount="indefinite" />
+  </line>
+  <line class="doi-footer-line-accent">
+    <animate attributeName="x1" values="60;80;60" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="35;45;35" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="190;210;190" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="40;30;40" dur="9s" repeatCount="indefinite" />
+  </line>
+  <line class="doi-footer-line">
+    <animate attributeName="x1" values="130;150;130" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="85;75;85" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="190;210;190" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="40;30;40" dur="9s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Left Glowing Vertices -->
+  <circle r="3.5" fill="#0EA5E9" filter="url(#doiFooterNodeGlow)">
+    <animate attributeName="cx" values="60;80;60" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="35;45;35" dur="9s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4" fill="#4C56D4" filter="url(#doiFooterNodeGlow)">
+    <animate attributeName="cx" values="130;150;130" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="85;75;85" dur="9s" repeatCount="indefinite" />
+  </circle>
+  <circle r="3.5" fill="#6366F1" filter="url(#doiFooterNodeGlow)">
+    <animate attributeName="cx" values="190;210;190" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="40;30;40" dur="9s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- ================= RIGHT CONSTELLATION MESH ================= -->
+  <!-- Right Translucent Polygons -->
+  <polygon fill="#7C3AED" fill-opacity="0.04">
+    <animate attributeName="points"
+      values="760,40 820,85 890,35; 740,30 800,75 870,45; 760,40 820,85 890,35"
+      dur="10s" repeatCount="indefinite" />
+  </polygon>
+
+  <!-- Right Connecting Vectors -->
+  <line class="doi-footer-line">
+    <animate attributeName="x1" values="760;740;760" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="40;30;40" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="820;800;820" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="85;75;85" dur="10s" repeatCount="indefinite" />
+  </line>
+  <line class="doi-footer-line-accent">
+    <animate attributeName="x1" values="820;800;820" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="85;75;85" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="890;870;890" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="35;45;35" dur="10s" repeatCount="indefinite" />
+  </line>
+  <line class="doi-footer-line">
+    <animate attributeName="x1" values="760;740;760" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" values="40;30;40" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="x2" values="890;870;890" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="35;45;35" dur="10s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Right Glowing Vertices -->
+  <circle r="3.5" fill="#6366F1" filter="url(#doiFooterNodeGlow)">
+    <animate attributeName="cx" values="760;740;760" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="40;30;40" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle r="4" fill="#7C3AED" filter="url(#doiFooterNodeGlow)">
+    <animate attributeName="cx" values="820;800;820" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="85;75;85" dur="10s" repeatCount="indefinite" />
+  </circle>
+  <circle r="3.5" fill="#0EA5E9" filter="url(#doiFooterNodeGlow)">
+    <animate attributeName="cx" values="890;870;890" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="35;45;35" dur="10s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Center Motto Tagline -->
+  <text x="475" y="60" text-anchor="middle" dominant-baseline="central" class="doi-footer-text">
+    Building Resilient • Secure • Scalable Cloud Platforms
+  </text>
+
+  <!-- Bottom Decorative Gradient Accent Bar (Matching Header Top Bar) -->
+  <rect x="18" y="115" width="914" height="3" rx="1.5" fill="url(#doiFooterBrandGrad)" />
+</svg>

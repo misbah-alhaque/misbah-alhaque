@@ -129,6 +129,6 @@ I welcome conversations about Azure Cloud Architecture, Hybrid Cloud, Terraform 
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C7FF,50:0078D4,100:0B1F3A&height=110&section=footer" alt="Blue Cloud profile footer" width="100%" />
+<img src="https://raw.githubusercontent.com/misbah-alhaque/misbah-alhaque/main/assets/footer.svg" alt="Animated Cloud Infrastructure profile footer" width="100%" />
 
 </div>
