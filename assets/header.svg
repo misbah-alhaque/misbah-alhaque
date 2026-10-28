@@ -1,48 +1,56 @@
 <svg fill="none" viewBox="0 0 950 260" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- DevOps Insiders Dark Theme Canvas Background -->
-    <linearGradient id="doiBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080C18" />
-      <stop offset="45%" stop-color="#0E1528" />
-      <stop offset="100%" stop-color="#060913" />
+    <!-- DevOps Insiders Theme Canvas Background (White to Slate-50 with Subtle Indigo Tint) -->
+    <linearGradient id="doiBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2FF" />
     </linearGradient>
 
-    <!-- DevOps Insiders Signature Gradient (Indigo to Cyan to Purple) -->
+    <!-- DevOps Insiders Top Corporate Gradient Bar -->
     <linearGradient id="doiBrandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4C56D4" />
-      <stop offset="50%" stop-color="#6366F1" />
-      <stop offset="80%" stop-color="#0EA5E9" />
+      <stop offset="0%" stop-color="#312E81" />
+      <stop offset="45%" stop-color="#4C56D4" />
+      <stop offset="75%" stop-color="#6366F1" />
       <stop offset="100%" stop-color="#7C3AED" />
     </linearGradient>
 
-    <!-- Animated Border Gradient -->
+    <!-- Animated Border Gradient (Indigo to Cyan to Purple) -->
     <linearGradient id="doiBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4C56D4">
-        <animate attributeName="stop-color" values="#4C56D4;#0EA5E9;#7C3AED;#4C56D4" dur="7s" repeatCount="indefinite" />
+      <stop offset="0%" stop-color="#C7D2FE">
+        <animate attributeName="stop-color" values="#C7D2FE;#4C56D4;#818CF8;#C7D2FE" dur="8s" repeatCount="indefinite" />
       </stop>
-      <stop offset="50%" stop-color="#0EA5E9">
-        <animate attributeName="stop-color" values="#0EA5E9;#7C3AED;#4C56D4;#0EA5E9" dur="7s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#6366F1">
+        <animate attributeName="stop-color" values="#6366F1;#0EA5E9;#4C56D4;#6366F1" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#A78BFA">
+        <animate attributeName="stop-color" values="#A78BFA;#7C3AED;#6366F1;#A78BFA" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Title Gradient (DevOps Insiders Signature Dark-to-Brand-Gradient Text) -->
+    <linearGradient id="doiTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="35%" stop-color="#1E1B4B">
+        <animate attributeName="stop-color" values="#1E1B4B;#312E81;#1E1B4B" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="65%" stop-color="#4C56D4">
+        <animate attributeName="stop-color" values="#4C56D4;#6366F1;#4C56D4" dur="6s" repeatCount="indefinite" />
       </stop>
       <stop offset="100%" stop-color="#7C3AED">
-        <animate attributeName="stop-color" values="#7C3AED;#4C56D4;#0EA5E9;#7C3AED" dur="7s" repeatCount="indefinite" />
+        <animate attributeName="stop-color" values="#7C3AED;#0EA5E9;#7C3AED" dur="6s" repeatCount="indefinite" />
       </stop>
     </linearGradient>
 
-    <!-- Title Metallic Shimmer Gradient -->
-    <linearGradient id="doiTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="30%" stop-color="#FFFFFF" />
-      <stop offset="50%" stop-color="#C7D2FE">
-        <animate attributeName="stop-color" values="#FFFFFF;#93C5FD;#C7D2FE;#FFFFFF" dur="5s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="70%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#FFFFFF" />
-    </linearGradient>
-
+    <!-- Card Subtle Drop Shadow -->
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#4C56D4" flood-opacity="0.09" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.04" />
+    </filter>
 
     <!-- Node Glow Filter -->
     <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -51,7 +59,7 @@
 
     <!-- Ambient Large Blob Blur -->
     <filter id="blobBlur" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="55" result="blur" />
+      <feGaussianBlur stdDeviation="60" result="blur" />
     </filter>
   </defs>
 
@@ -59,30 +67,38 @@
     .doi-name {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-weight: 800;
-      font-size: 54px;
+      font-size: 56px;
       fill: url(#doiTitleGrad);
       letter-spacing: -0.5px;
-      filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.7));
+      filter: drop-shadow(0 4px 14px rgba(76, 86, 212, 0.22));
     }
     .plexus-line {
-      stroke: #6366F1;
-      stroke-width: 1.2;
-      opacity: 0.3;
+      stroke: #4C56D4;
+      stroke-width: 1.1;
+      opacity: 0.22;
     }
     .plexus-line-accent {
       stroke: #0EA5E9;
-      stroke-width: 1.3;
-      opacity: 0.38;
+      stroke-width: 1.2;
+      opacity: 0.32;
     }
   </style>
 
-  <!-- Canvas Container with DevOps Insiders Glowing Border -->
-  <rect x="2" y="2" width="946" height="256" rx="18" fill="url(#doiBg)" stroke="url(#doiBorderGrad)" stroke-width="1.8" />
+  <!-- Canvas Container with DevOps Insiders Border and Subtle Elevation -->
+  <rect x="2" y="2" width="946" height="256" rx="18" fill="url(#doiBg)" stroke="url(#doiBorderGrad)" stroke-width="1.6" filter="url(#cardShadow)" />
 
   <!-- Ambient Floating Blobs (DevOps Insiders CSS Theme Blobs) -->
-  <circle cx="160" cy="70" r="140" fill="#4C56D4" opacity="0.18" filter="url(#blobBlur)" />
-  <circle cx="800" cy="170" r="150" fill="#7C3AED" opacity="0.16" filter="url(#blobBlur)" />
-  <circle cx="480" cy="120" r="110" fill="#0EA5E9" opacity="0.09" filter="url(#blobBlur)" />
+  <circle cx="140" cy="60" r="150" fill="#4C56D4" opacity="0.14" filter="url(#blobBlur)">
+    <animate attributeName="cx" values="140;175;140" dur="18s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="60;90;60" dur="18s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="820" cy="160" r="160" fill="#7C3AED" opacity="0.12" filter="url(#blobBlur)">
+    <animate attributeName="cx" values="820;785;820" dur="20s" repeatCount="indefinite" />
+    <animate attributeName="cy" values="160;130;160" dur="20s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="480" cy="130" r="120" fill="#0EA5E9" opacity="0.09" filter="url(#blobBlur)">
+    <animate attributeName="cx" values="480;515;480" dur="15s" repeatCount="indefinite" />
+  </circle>
 
   <!-- Top Decorative Gradient Accent Bar -->
   <rect x="18" y="2" width="914" height="3" rx="1.5" fill="url(#doiBrandGrad)" />
