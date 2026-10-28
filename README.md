@@ -49,7 +49,7 @@ flowchart TD
 
 <div align="center">
 
-[![Technology stack](https://skillicons.dev/icons?i=azure,aws,gcp,terraform,docker,kubernetes,git,githubactions,linux,bash,powershell,python&perline=6)(https://skillicons.dev)
+[![Technology stack](https://skillicons.dev/icons?i=azure,aws,gcp,terraform,docker,kubernetes,git,githubactions,linux,bash,powershell,python&perline=6)](https://skillicons.dev)
 
 </div>
 
