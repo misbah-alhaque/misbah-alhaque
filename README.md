@@ -119,14 +119,6 @@ Comprehensive observability ecosystem aggregating infrastructure metrics, audit 
 
 ---
 
-## 💼 Career Snapshot
-
-* 🏢 **Advance International Co.** — *Senior Cloud Infrastructure Engineer* | **March 2022 – Present**
-* 🏢 **Prima Info Systems** — *Cloud Engineer* | **Nov 2017 – Jan 2022**
-* 🏢 **GaiGrid Technology India Pvt. Ltd.** — *Support Engineer* | **May 2014 – Nov 2017**
-
----
-
 ## 🤝 Connect
 
 I welcome conversations about Azure Cloud Architecture, Hybrid Cloud, Terraform Automation, M365 Governance, and Infrastructure Engineering opportunities.
