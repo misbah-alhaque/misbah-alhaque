@@ -19,7 +19,7 @@
 
 ## 👋 About Me
 
-I am a **Senior Cloud Infrastructure Engineer with 12+ years of enterprise IT experience**, including **9+ years in designing, implementing, and optimizing enterprise cloud platforms** across **Microsoft Azure**, **AWS**, and **Google Cloud Platform (GCP)**.
+I am a **Senior DevSecOps Engineer & Cloud Solutions Architectrs**with expertise in designing, implementing, and optimizing enterprise cloud platforms across **Microsoft Azure**, **AWS**, and **Google Cloud Platform (GCP)**.
 
 My core focus is architecting **hybrid cloud environments**, **landing zones**, **hub-and-spoke networking**, **Infrastructure as Code (Terraform)**, and **disaster recovery (DR)** to ensure seamless business continuity, high availability, and operational resilience.
 
@@ -36,11 +36,11 @@ flowchart TD
   A[Enterprise Cloud Portfolio] --> B[Azure Landing Zone & Hub-Spoke]
   A --> C[Terraform Multi-Cloud IaC]
   A --> D[Hybrid Cloud & DR Resilience]
-  A --> E[Identity & Governance M365]
+  A --> E[Identity & Governance]
   B --> F[Azure Firewall & Application Gateway]
-  C --> G[Azure DevOps & GitHub Actions CI/CD]
+  C --> G[CI/CD - Azure DevOps & GitHub Actions]
   D --> H[Site-to-Site VPN & Business Continuity]
-  E --> I[Microsoft Entra ID, Intune & Defender]
+  E --> I[M365, Microsoft Entra ID, Intune & Defender]
 ```
 
 ---
